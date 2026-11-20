@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="assets/portrait-cutout.webp" type="image/webp">
+<link rel="preload" as="image" href="assets/portrait-bw.webp" type="image/webp">
 <link rel="preload" href="assets/fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -41,8 +41,8 @@ a{color:inherit}
 .namewrap{position:absolute;left:0;right:0;bottom:36px}
 .hn{font-family:'Young Serif',Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(64px,min(12vw,17svh),176px);line-height:0.86;letter-spacing:-0.005em;margin:0;white-space:nowrap}
 .hero-img{position:absolute;right:0;bottom:0;width:min(52vw,760px);height:auto;z-index:2;display:block}
-.hero-img.bw{filter:grayscale(1) contrast(1.12)}
-.overlay{position:absolute;inset:0;z-index:3;pointer-events:none;-webkit-mask-image:url(assets/portrait-cutout.webp);mask-image:url(assets/portrait-cutout.webp);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:right bottom;mask-position:right bottom;-webkit-mask-size:min(52vw,760px) auto;mask-size:min(52vw,760px) auto}
+.overlay{position:absolute;inset:0;z-index:3;pointer-events:none;-webkit-mask-image:url(assets/portrait-bw.webp);mask-image:url(assets/portrait-bw.webp);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:right bottom;mask-position:right bottom;-webkit-mask-size:min(52vw,760px) auto;mask-size:min(52vw,760px) auto}
+.overlay{will-change:transform}
 .hn-over{color:#17201A;-webkit-text-stroke:2px #E5A93A}
 .hero-copy{position:relative;z-index:4;padding-top:32px;max-width:min(540px,44vw)}
 
@@ -127,7 +127,7 @@ header{padding-top:14px !important}
 <h1 class="hn" style="color: #E5A93A">Ntusekho<br>Mngadi</h1>
 </div>
 </div>
-<img class="hero-img bw" src="assets/portrait-cutout.webp" alt="Portrait of Ntusekho looking into the camera" width="1100" height="1055" fetchpriority="high">
+<img class="hero-img" src="assets/portrait-bw.webp" decoding="async" alt="Portrait of Ntusekho looking into the camera" width="1100" height="1055" fetchpriority="high">
 <div class="overlay" aria-hidden="true">
 <div class="namewrap">
 <div class="wrap">
@@ -251,7 +251,7 @@ header{padding-top:14px !important}
 <span>Movement</span>
 <span>Music</span>
 </div>
-<img src="assets/stadium-cutout.webp" alt="Ntusekho laughing in a striped shirt and jeans" width="602" height="1760" loading="lazy" style="height: 780px; width: auto; max-width: 100%; display: block">
+<img src="assets/stadium-cutout.webp" alt="Ntusekho laughing in a striped shirt and jeans" width="602" height="1760" loading="lazy" decoding="async" style="height: 780px; width: auto; max-width: 100%; display: block">
 </div>
 </div>
 </section>
