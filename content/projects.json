@@ -1,0 +1,100 @@
+{
+  "ai": [
+    {
+      "title": "AWS cost analysis agent",
+      "status": "Built, on GitHub",
+      "description": "A tool-using agent written from first principles on the Bedrock Converse API, then rebuilt in the Strands Agents SDK. Four Python tools over live Cost Explorer data, an eval harness that took the pass rate from about 74% to 100%, and a least-privilege IAM role proven by allow and deny tests.",
+      "stack": "Python, boto3, Bedrock Converse API, Strands Agents SDK, Amazon Nova",
+      "link": { "label": "View the repo", "url": "https://github.com/Ntusi/fde-agent" }
+    },
+    {
+      "title": "BrainBox",
+      "status": "In progress",
+      "description": "A personal knowledge assistant on the Claude API, built in phases: multi-turn chat with memory, then a RAG knowledge base on AWS, tool use and production. Along the way, structured-output tools that return JSON, like a flashcard generator and a sentiment analyser.",
+      "stack": "Python, Anthropic Claude API, Sonnet and Haiku"
+    },
+    {
+      "title": "Meeting intelligence tool",
+      "status": "Architecture",
+      "description": "An event-driven pipeline that turns meeting recordings into transcripts, summaries, decisions and action items, with plain-language Q&A over past meetings using RAG.",
+      "stack": "Transcribe, Step Functions, Lambda, Bedrock, Titan Embeddings, OpenSearch Serverless"
+    },
+    {
+      "title": "QnABot with Amazon Bedrock",
+      "status": "Shipped",
+      "description": "Deployed QnABot on AWS as infrastructure as code and packaged it as a partner offering, with Bedrock embeddings and LLM answers. The v7.4.0 release shipped an empty website.zip, so I traced it and hot-patched it live with v7.3.16 assets.",
+      "stack": "QnABot on AWS, Amazon Bedrock, Amazon Lex, CloudFormation"
+    }
+  ],
+
+  "cloud": [
+    {
+      "title": "Contact centre move to Amazon Connect",
+      "description": "At NTT I led an on-premises contact centre migration to Amazon Connect as architect and project manager, and built the integrations around it: Lambda functions wired into Connect, DynamoDB and Lex IVR, plus custom notifications with SNS and SES. The work helped the team earn Amazon Connect Service Delivery Partner status.",
+      "stack": "Amazon Connect, Lambda, DynamoDB, Lex, SNS, SES"
+    },
+    {
+      "title": "Pipelines and infrastructure as code",
+      "description": "As a DevOps engineer I automated deployments with CodePipeline, CodeBuild and CodeDeploy, wrote CloudFormation orchestrated by Step Functions, and developed Python and JavaScript Lambda functions in SAFe and Scrum teams.",
+      "stack": "CodePipeline, CloudFormation, Step Functions, Lambda"
+    },
+    {
+      "title": "Security Hub and automated response",
+      "description": "Enabled Security Hub with the Foundational Security Best Practices standard and deployed the Automated Security Response stacks from CloudShell. Found the IAM gap blocking SSM automation, fixed it, and wrote it into the runbook.",
+      "stack": "Security Hub, AWS Config, Systems Manager, IAM"
+    },
+    {
+      "title": "Cost dashboards across two regions",
+      "description": "A CUDOS v5 build with billing data in af-south-1 and Glue, Athena and QuickSight in us-east-1, plus CUR 2.0 pipelines through Billing Conductor for partner cost visibility.",
+      "stack": "CUDOS, CUR 2.0, Billing Conductor, Athena, QuickSight"
+    },
+    {
+      "title": "Migration assessments",
+      "description": "Server discovery with the AWS Agentless Collector, EC2 right-sizing and cost scoping, then AWS Transform and Application Migration Service to move the workloads.",
+      "stack": "Agentless Collector, AWS Transform, MGN"
+    },
+    {
+      "title": "Architecture reviews",
+      "description": "I review production environments against the Well-Architected Framework and take partners’ software and services through the AWS Foundational Technical Review, from first review to validation.",
+      "stack": "Well-Architected, AWS FTR"
+    }
+  ],
+
+  "building": [
+    {
+      "title": "Better Recovery",
+      "description": "Built by a runner with an injury, for other athletes working back from theirs. Stretches and workouts to follow, step by step, to help you recover.",
+      "stack": "iOS app, live on the App Store",
+      "link": { "label": "Get it on the App Store", "url": "https://apps.apple.com/app/id6784594839" }
+    },
+    {
+      "title": "QuoteShareNow",
+      "description": "My own site for finding and sharing quotes, served from S3 and CloudFront with small APIs behind it.",
+      "stack": "S3, CloudFront, quote APIs",
+      "link": { "label": "quotesharenow.com", "url": "https://quotesharenow.com" }
+    },
+    {
+      "title": "NextPage Co.",
+      "description": "A technology and business consultancy for South African SMEs that I co-founded. I lead the AWS and solution architecture side.",
+      "stack": "Consulting, web, AWS",
+      "link": { "label": "nextpageco.co.za", "url": "https://nextpageco.co.za" }
+    },
+    {
+      "title": "SA telecoms on Twitter",
+      "description": "UKZN group project that classified South African telecoms’ Twitter footprint before and during Covid-19.",
+      "stack": "Neo4j, Java",
+      "link": { "label": "View the repo", "url": "https://github.com/talhavawda/za-telecoms-twitter-footprint" }
+    }
+  ],
+
+  "certifications": [
+    "AWS Solutions Architect Professional, 2026",
+    "AWS AI Practitioner, 2026",
+    "Claude 101, Anthropic Academy, 2026",
+    "AWS Solutions Architect Associate, 2026",
+    "AWS Developer Associate",
+    "AWS Cloud Practitioner"
+  ],
+
+  "certifications_also": "Also Microsoft Power BI Data Analyst Associate, Microsoft Power Platform Fundamentals, SAFe 5 Agilist and Salesforce Associate."
+}

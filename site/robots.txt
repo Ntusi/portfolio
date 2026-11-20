@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ntusekhomngadi.com/sitemap.xml

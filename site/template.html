@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ntusekho Mngadi, AI and cloud engineer</title>
+<meta name="description" content="Ntusekho Mngadi builds AI agents and cloud systems on AWS. AWS Certified Solutions Architect Professional in Johannesburg, South Africa.">
+<link rel="canonical" href="https://ntusekhomngadi.com/">
+<meta name="theme-color" content="#24382C">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ntusekhomngadi.com/">
+<meta property="og:title" content="Ntusekho Mngadi, AI and cloud engineer">
+<meta property="og:description" content="I build AI agents and cloud systems on AWS.">
+<meta property="og:image" content="https://ntusekhomngadi.com/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/portrait-cutout.webp" type="image/webp">
+<link rel="preload" href="assets/fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Young Serif';src:url(assets/fonts/young-serif.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Schibsted Grotesk';src:url(assets/fonts/schibsted-grotesk.woff2) format('woff2');font-weight:400 900;font-style:normal;font-display:swap}
+body{margin:0;background:#24382C;-webkit-tap-highlight-color:transparent}
+*{box-sizing:border-box}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:48px}
+.serif{font-family:'Young Serif',Georgia,serif;font-weight:400}
+.caps{text-transform:uppercase;letter-spacing:0.01em}
+.nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.logo{margin-right:auto}
+.navlinks{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.navlinks a{text-decoration:none;padding:12px 0}
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:36px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.hero{position:relative;background:#24382C;min-height:clamp(720px,calc(100svh - 76px),980px);overflow:hidden}
+.stage{position:absolute;inset:0}
+.namewrap{position:absolute;left:0;right:0;bottom:36px}
+.hn{font-family:'Young Serif',Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(64px,min(12vw,17svh),176px);line-height:0.86;letter-spacing:-0.005em;margin:0;white-space:nowrap}
+.hero-img{position:absolute;right:0;bottom:0;width:min(52vw,760px);height:auto;z-index:2;display:block}
+.hero-img.bw{filter:grayscale(1) contrast(1.12)}
+.overlay{position:absolute;inset:0;z-index:3;pointer-events:none;-webkit-mask-image:url(assets/portrait-cutout.webp);mask-image:url(assets/portrait-cutout.webp);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:right bottom;mask-position:right bottom;-webkit-mask-size:min(52vw,760px) auto;mask-size:min(52vw,760px) auto}
+.hn-over{color:#17201A;-webkit-text-stroke:2px #E5A93A}
+.hero-copy{position:relative;z-index:4;padding-top:32px;max-width:min(540px,44vw)}
+
+.life{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:end}
+.life-photo{grid-column:1;grid-row:1;position:relative;display:flex;justify-content:center;align-self:stretch;align-items:flex-end;min-height:820px}
+.life-text{grid-column:2;grid-row:1;padding-bottom:112px}
+.words{position:absolute;inset:0 0 auto 0;display:flex;flex-direction:column;gap:6px;font-family:'Young Serif',Georgia,serif;text-transform:uppercase;font-size:clamp(40px,4.4vw,64px);line-height:1;color:transparent;-webkit-text-stroke:1.5px #17201A;white-space:nowrap;z-index:0}
+.words span:nth-child(even){align-self:flex-end}
+.life-photo img{position:relative;z-index:1}
+
+.contact-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:end}
+
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:2px;font-weight:600;text-decoration:none;touch-action:manipulation;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 180ms ease,color 180ms ease}
+.btn:active{transform:scale(.97)}
+.tlink{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;transition:text-decoration-color 180ms ease}
+a:focus-visible{outline:2px solid #E5A93A;outline-offset:4px}
+.on-light a:focus-visible{outline-color:#17201A}
+.skip{position:absolute;left:-9999px;top:8px;background:#E5A93A;color:#17201A;padding:10px 14px;z-index:10}
+.skip:focus-visible{left:8px}
+h1,h2,h3{text-wrap:balance}
+.num{font-variant-numeric:tabular-nums}
+@media (hover:hover) and (pointer:fine){
+.btn-solid:hover{background:#F0BD58}
+.btn-line:hover{background:#2F4838}
+.navlinks a:hover{color:#E5A93A}
+.tlink:hover{text-decoration-thickness:2px}
+}
+@media (max-width:1100px){
+.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero{min-height:0}
+.stage{position:relative;height:calc(min(100vw,620px) * 0.96)}
+.hero-img{width:min(100%,620px)}
+.overlay{-webkit-mask-size:min(100%,620px) auto;mask-size:min(100%,620px) auto}
+.hn{font-size:12.2vw}
+.namewrap{bottom:20px}
+.hero-copy{padding:40px 0 80px;max-width:640px}
+}
+@media (max-width:900px){
+.wrap{padding-inline:20px}
+.split,.grid2,.grid4,.life,.contact-cols{grid-template-columns:minmax(0,1fr)}
+.life-photo,.life-text{grid-column:1;grid-row:auto}
+.life-text{padding-bottom:24px}
+.life-photo{min-height:600px}
+.life-photo img{height:560px !important}
+.navlinks{gap:18px}
+}
+@media (max-width:640px){
+header{padding-top:14px !important}
+.nav{gap:4px 16px}
+.navlinks{order:3;flex:1 1 100%;min-width:0;flex-wrap:nowrap;overflow-x:auto;gap:22px;scrollbar-width:none;font-size:15px}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{white-space:nowrap}
+.life-photo{min-height:560px}
+.life-photo img{height:520px !important}
+}
+@media (prefers-reduced-motion:reduce){.btn,.tlink{transition:none}.btn:active{transform:none}}
+</style>
+</head>
+<body>
+<div style="font-family: 'Schibsted Grotesk', system-ui, sans-serif; color: #F1EEE2; background: #24382C; font-size: 17px; line-height: 1.6">
+
+<a class="skip" href="#ai">Skip to work</a>
+
+<header style="padding-top: 28px; background: #24382C; position: relative; z-index: 5">
+<div class="wrap nav">
+<a href="#top" class="serif logo" aria-label="Ntusekho Mngadi, home" style="font-size: 28px; text-decoration: none; color: #F1EEE2">NM</a>
+<nav class="navlinks" aria-label="Main" style="font-size: 15px; font-weight: 500">
+<a href="#about">About</a>
+<a href="#ai">AI work</a>
+<a href="#cloud">Cloud work</a>
+<a href="#building">Building</a>
+<a href="#life">Off the clock</a>
+</nav>
+<a class="btn btn-solid nav-cta" href="mailto:2cmngadi@gmail.com" style="background: #E5A93A; color: #17201A; min-height: 44px; padding: 0 18px">Email me</a>
+</div>
+</header>
+
+<section id="top" class="hero">
+<div class="stage">
+<div class="namewrap" style="z-index: 1">
+<div class="wrap">
+<h1 class="hn" style="color: #E5A93A">Ntusekho<br>Mngadi</h1>
+</div>
+</div>
+<img class="hero-img bw" src="assets/portrait-cutout.webp" alt="Portrait of Ntusekho looking into the camera" width="1100" height="1055" fetchpriority="high">
+<div class="overlay" aria-hidden="true">
+<div class="namewrap">
+<div class="wrap">
+<p class="hn hn-over">Ntusekho<br>Mngadi</p>
+</div>
+</div>
+</div>
+</div>
+<div class="wrap">
+<div class="hero-copy">
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.4; color: #C9C6B6; margin-bottom: 24px">
+<span>AI and cloud engineer in Johannesburg, South Africa</span>
+<span style="color: #E5A93A; font-weight: 600">AWS Certified Solutions Architect Professional</span>
+</div>
+<p class="serif caps" style="font-size: clamp(28px, 2.6vw, 38px); line-height: 1.06; margin: 0 0 20px; color: #F1EEE2">I build AI agents and cloud systems on AWS.</p>
+<p style="margin: 0 0 28px; max-width: 32em; color: #D9D6C8">I’m Ntusi, a solutions architect and engineer in Johannesburg. I design AWS architectures, build the demos that prove them, and right now I’m writing AI agents in Python on Amazon Bedrock and the Claude API.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a class="btn btn-solid" href="#ai" style="background: #E5A93A; color: #17201A">See my work</a>
+<a class="btn btn-line" href="https://github.com/Ntusi" style="border: 1.5px solid #F1EEE2; color: #F1EEE2">GitHub profile</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="on-light" style="background: #EFEBDC; color: #17201A; padding: 112px 0 48px; scroll-margin-top: 24px">
+<h2 class="vh">About</h2>
+<div class="wrap">
+<p class="serif" style="font-size: clamp(22px, 2.1vw, 28px); line-height: 1.42; margin: 0 0 64px; max-width: 36em">I’m Ntusekho Mngadi, Ntusi for short. I studied Computer Science at UKZN and have spent five years building on AWS: first at NTT (Dimension Data), where I went from intern to DevOps engineer to cloud architect, and now as a Pre-sales Solutions Architect at an AWS distributor. I’ve written Lambda integrations, built CI/CD pipelines, led a contact centre migration and reviewed partner architectures against the AWS Foundational Technical Review. Since passing the Solutions Architect Professional exam, most of my energy goes into getting AI agents into production.</p>
+<div class="grid2" style="max-width: 980px; row-gap: 40px">
+<div>
+<h3 class="serif caps" style="font-size: 20px; margin: 0 0 16px">Experience</h3>
+<ol style="list-style: none; margin: 0; padding: 0; border-left: 1.5px solid #17201A">
+<li style="padding: 0 0 18px 20px"><span style="display: block; font-weight: 600">Pre-sales Solutions Architect, Cloud On Demand</span><span style="color: #4C574F; font-size: 15px">Jan 2025 to now</span></li>
+<li style="padding: 0 0 18px 20px"><span style="display: block; font-weight: 600">Cloud Architect, NTT (Dimension Data)</span><span style="color: #4C574F; font-size: 15px">Apr 2023 to Dec 2024</span></li>
+<li style="padding: 0 0 18px 20px"><span style="display: block; font-weight: 600">Associate DevOps Engineer, NTT</span><span style="color: #4C574F; font-size: 15px">Apr 2022 to Mar 2023</span></li>
+<li style="padding: 0 0 18px 20px"><span style="display: block; font-weight: 600">Technical Accelerated Programme, NTT</span><span style="color: #4C574F; font-size: 15px">Apr 2021 to Mar 2022</span></li>
+<li style="padding: 0 0 0 20px"><span style="display: block; font-weight: 600">BSc Computer Science, University of KwaZulu-Natal</span><span style="color: #4C574F; font-size: 15px">2018 to 2021</span></li>
+</ol>
+</div>
+<div>
+<h3 class="serif caps" style="font-size: 20px; margin: 0 0 16px">Certifications</h3>
+<!-- CERTIFICATIONS -->
+</div>
+</div>
+</div>
+<div class="wrap" style="margin-top: 64px; text-align: right">
+<p class="serif caps" aria-hidden="true" style="font-size: clamp(56px, 14.5vw, 190px); line-height: 0.82; margin: 0; color: #17201A">About</p>
+</div>
+</section>
+
+<section id="ai" style="background: #24382C; padding: 112px 0; scroll-margin-top: 24px">
+<div class="wrap split">
+<div>
+<h2 class="serif caps" style="font-size: clamp(40px, 4.6vw, 64px); line-height: 1; margin: 0 0 24px; color: #E5A93A">AI work</h2>
+<p style="margin: 0; max-width: 24em; color: #D9D6C8">After passing the Solutions Architect Professional exam I went all in on getting AI into production. Most of it is Python: agent loops, tool use, retrieval, evals, and the IAM and telemetry that make it safe to run.</p>
+</div>
+<div class="grid2">
+<!-- AI_PROJECTS -->
+</div>
+</div>
+</section>
+
+<section id="cloud" class="on-light" style="background: #EFEBDC; color: #17201A; padding: 112px 0; scroll-margin-top: 24px">
+<div class="wrap split">
+<div>
+<h2 class="serif caps" style="font-size: clamp(40px, 4.6vw, 64px); line-height: 1; margin: 0 0 24px">Cloud work</h2>
+<p style="margin: 0; max-width: 24em; color: #3B463F">Five years of designing, building, securing, migrating and costing workloads on AWS.</p>
+</div>
+<div class="grid2">
+<!-- CLOUD_PROJECTS -->
+</div>
+</div>
+</section>
+
+<section id="building" style="background: #24382C; padding: 112px 0; scroll-margin-top: 24px">
+<div class="wrap">
+<h2 class="serif caps" style="font-size: clamp(40px, 4.6vw, 64px); line-height: 1; margin: 0 0 48px; color: #E5A93A">Things I’m building</h2>
+<div class="grid4">
+<!-- BUILDING_PROJECTS -->
+</div>
+</div>
+</section>
+
+<section id="life" class="on-light" style="background: #E5A93A; color: #17201A; padding: 112px 0 0; scroll-margin-top: 24px; overflow: hidden">
+<div class="wrap life">
+<div class="life-text">
+<h2 class="serif caps" style="font-size: clamp(40px, 4.6vw, 64px); line-height: 1; margin: 0 0 40px">Off the clock</h2>
+<div class="grid2">
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">Running</h3>
+<p style="margin: 0">Half marathons, and Car Chats: a minute talking to camera, then the run, posted to TikTok.</p>
+</div>
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">Handstands</h3>
+<p style="margin: 0">Chasing a freestanding handstand. Hips over head is the goal. The banana back is still winning.</p>
+</div>
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">People</h3>
+<p style="margin: 0">Going out, meeting new people and figuring out why people do what they do. Human psychology fascinates me, and so does a night of laughing with friends.</p>
+</div>
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">Guitar</h3>
+<p style="margin: 0">Learning neo-soul fingerpicking with Tom Misch, Steve Lacy and Daniel Caesar on repeat.</p>
+</div>
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">Aeroplanes</h3>
+<p style="margin: 0">Aeroplanes and aerospace pull at me. One day I want to work closer to that industry.</p>
+</div>
+<div style="border-top: 1.5px solid #17201A; padding: 24px 0 32px">
+<h3 class="serif" style="font-size: 26px; margin: 0 0 10px">Science</h3>
+<p style="margin: 0">How things work, and going down rabbit holes until they make sense.</p>
+</div>
+</div>
+</div>
+<div class="life-photo">
+<div class="words" aria-hidden="true">
+<span>Airbender</span>
+<span>Anime</span>
+<span>Tattoos</span>
+<span>Flipping</span>
+<span>Movement</span>
+<span>Music</span>
+</div>
+<img src="assets/stadium-cutout.webp" alt="Ntusekho laughing in a striped shirt and jeans" width="602" height="1760" loading="lazy" style="height: 780px; width: auto; max-width: 100%; display: block">
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: #24382C; padding: 112px 0 48px">
+<div class="wrap">
+<p class="serif caps" aria-hidden="true" style="font-size: clamp(48px, 14.5vw, 190px); line-height: 0.82; margin: 0 0 clamp(32px, 5vw, 64px); color: #E5A93A">Contact</p>
+<div class="contact-cols" style="margin-bottom: 96px">
+<div>
+<h2 class="serif caps" style="font-size: clamp(30px, 3vw, 42px); line-height: 1.06; margin: 0 0 16px; max-width: 14em">Hiring for AI or cloud on AWS? Let’s talk.</h2>
+<p style="margin: 0; color: #D9D6C8; font-size: 19px">Or just say hi.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 22px">
+<a class="tlink serif" href="mailto:2cmngadi@gmail.com" style="color: #E5A93A; font-size: clamp(24px, 2.4vw, 32px); overflow-wrap: anywhere">2cmngadi@gmail.com</a>
+<a class="tlink" href="https://www.linkedin.com/in/ntusekho-mngadi-7932b7125">LinkedIn</a>
+<a class="tlink" href="https://github.com/Ntusi">GitHub</a>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid #4A6151; padding-top: 24px; font-size: 14px; color: #C9C6B6">
+<span>Ntusekho Mngadi</span>
+<span>Johannesburg, South Africa</span>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
